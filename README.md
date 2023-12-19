@@ -20,3 +20,5 @@ To start the development server
 
 - Employees can be filtered by Teams and their heirarchy will be displayed on right side of the screen.
 
+
+- [Vercel app link](https://happy-fox-frontend-assignment.vercel.app/)
