@@ -3,7 +3,6 @@ import type { Employees } from "@/interfaces";
 import EmployeeDetails from "./EmployeeDetails";
 import SearchBar from "./SearchBar";
 import { useEffect, useState } from "react";
-import { BASE_URL } from "./BaseUrl";
 import Filter from "./Filter";
 import Minisearch from "minisearch";
 import dynamic from "next/dynamic";
@@ -84,9 +83,9 @@ export default function LandingPage() {
   };
 
   return (
-    <div className=" flex flex-row gap-5 items-start justify-center mx-auto">
+    <div className=" flex flex-col lg:flex-row gap-5 items-start justify-center mx-auto">
       {/* Left Side */}
-      <div className=" flex flex-col justify-start items-start gap-2 w-3/4 h-fit">
+      <div className=" flex flex-col justify-start items-start gap-2 w-3/4 lg:w-[50%] h-fit">
         <div className=" flex flex-row justify-between items-center gap-3">
           <SearchBar searchForEmployee={searchForEmployee} />
           <Filter filterByTeam={filterByTeam} />
